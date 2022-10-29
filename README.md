@@ -1,5 +1,7 @@
 # Bem-vindo ao Projeto Trybe Futebol Clube!
 
+<img src="tfc.png" alt="Página de login do projeto TFC">
+
 Este é um projeto da [Trybe](https://www.betrybe.com/) desenvolvido no módulo de Back-end.
 O TFC é um site informativo sobre partidas e classificações de futebol. 
 
