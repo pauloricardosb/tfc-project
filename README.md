@@ -1,28 +1,28 @@
 # Bem-vindo ao Projeto Trybe Futebol Clube!
 
-Este é um projeto da [Trybe](https://www.betrybe.com/) que foi desenvolvido no módulo de Back-end.
-O TFC é um site informativo sobre partidas e classificações de futebol. Nele foi desenvolvida uma API utilizando o método ***TDD*** (Test Driven Development) e feita a sua integração com um front-end (previamente disponibilizado pela Trybe) e com um banco de dados ***MySQL***.
+Este é um projeto da [Trybe](https://www.betrybe.com/) desenvolvido no módulo de Back-end.
+O TFC é um site informativo sobre partidas e classificações de futebol. 
+
+Nele foi desenvolvida uma API utilizando o método ***TDD*** (Test Driven Development) e feita a sua integração com um front-end (previamente disponibilizado pela Trybe) com um banco de dados ***MySQL***.
 O projeto segue o paradigma de programação ***POO*** (Programação orientada a objetos) para sua construção.
 
-![login-page-tfc](https://user-images.githubusercontent.com/99992183/198701078-08f1a3b1-a340-4db4-831f-8698415d0034.png)
+## Linguagens e Tecnologias
 
-## Tecnologias utilizadas
+Em seu desenvolvimento foi utilizada linguagem ***TypeScript*** para escrever os códigos e ***Node.js*** juntamente com o framework ***Express*** para fornecer toda a estrutura para a construção dos endpoints da aplicação. 
 
-Em seu desenvolvimento foi utilizada linguagem ***TypeScript*** para escrever os códigos e ***Node.js*** juntamente com o framework ***Express*** para fornecer toda a estrutura que possibilitou a construção dos endpoints da aplicação. 
+Foi utilizado o ORM ***Sequelize***, que é o responsável por toda a consulta e manipulação do banco de dados MySQL.
 
-Fora isso, foi utilizado o ORM ***Sequelize***, que é o responsável por toda a abstração de consultas e manipulações do banco de dados MySQL.
+Para a geração e verificação de tokens foi utilizado o ***JWT*** (JSON Web Token), possibilitando a verificação e autenticação de usuários, além de verificar e se tal tem permissões de administrador para realizar determinadas ações, como cadastrar, atualizar ou finalizar partidas.
 
-Para a geração e verificação de tokens foi utilizado o ***JWT*** (JSON Web Token), com ele é possível verificar se o usuário está devidamente autenticado e se ele tem permissões de administrador para realizar determinadas ações, como cadastrar, atualizar ou finalizar partidas, deixando assim a aplicação mais segura.
-
-E por fim, para os testes de integração foi utilizado ***Mocha*** e ***Chai*** para estruturar os testes e fazer as asserções e o ***Sinon*** para mockar as funções, não permitindo que os testes tivessem acesso ao banco de dados.
+E por fim, para os testes de integração foi utilizado ***Mocha*** e ***Chai*** para estruturar os testes e fazer as asserções.
 
 ## O que foi desenvolvido
 
-  - Banco de dados MySQL utilizando o Sequelize. Este banco possui tabelas que armazenam informações dos usuários, informações dos times e informaçẽs das partidas; 
+  - Banco de dados MySQL utilizando o Sequelize com tabelas que armazenam informações dos usuários, informações dos times e informaçẽs das partidas; 
   - Endpoints que lêem e escrevem em um banco de dados MySQL;
-  - Middlewares que realizam verificações dos dados enviados nas requisições e se o usuário está autenticado e possui permissão para realizar determinadas ações;
-  - Divisão da aplicação em camadas (arquitetura MSC), o que permite uma maior organização do código e maior facilidade de manutenção;
-  - Testes de integração que dão uma maior segurança na hora de refatorar o código, sem correr o risco de quebrar a aplicação.
+  - Middlewares que realizam verificações dos dados enviados nas requisições;
+  - Divisão da aplicação em camadas (arquitetura MSC);
+  - Testes de integração que dão uma maior segurança para aplicação como um todo.
 
 ## Como rodar o projeto na sua máquina utilizando o Docker:
 
@@ -37,14 +37,14 @@ Na sua máquina você deve ter:
 - Docker-compose versão igual ou superior à 1.29.2.
 </details>
 
-1. Navegue até o local onde deseja clonar o repositório e utilize o **git clone**:
+1. Clone repositório:
 ```
-git clone git@github.com:Tayna-Silva-Macedo/project-trybe-futebol-clube.git
+git clone git@github.com:pauloricardosb/tfc-project.git
 ```
 
-2. Acesse o diretório do projeto **project-trybe-futebol-clube** e instale as dependências necessárias:
+2. Acesse o diretório do projeto e instale as dependências necessárias:
 ```
-cd project-trybe-futebol-clube
+cd tfc-project
 npm install
 ```
 
@@ -58,8 +58,7 @@ npm run compose:up
 4. Para rodar os testes de integração e verificar a sua cobertura são utilizados os seguintes comandos:
 
 ```
-cd app/backend
-npm run test:coverage
+cd app/backend && npm run test:coverage
 ```
 
 ## Endpoints da API:
