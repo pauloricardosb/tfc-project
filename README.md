@@ -130,4 +130,6 @@ Na requisição `PATCH` que atualiza o resultado é necessário informar um JSON
 |`GET`  |Retorna a classificação geral com base nas partidas já finalizadas                |http://localhost:3001/leaderboard             |
 
 
-Readme criado por <a href="https://github.com/Tayna-Silva-Macedo" >Tayna Macedo</a>
+
+
+README criado por <a href="https://github.com/Tayna-Silva-Macedo" >Tayna Macedo</a>
