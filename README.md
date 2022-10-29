@@ -63,6 +63,10 @@ npm run compose:up
 cd app/backend && npm run test:coverage
 ```
 
+Se tudo funcionou perfeitamente, o retorno deve ser algo como:
+
+<img src="tests.png" alt="Cobertura de testes TFC">
+
 ## Endpoints da API:
 
 #### Login
