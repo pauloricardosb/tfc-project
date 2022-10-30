@@ -137,4 +137,4 @@ Na requisição `PATCH` que atualiza o resultado é necessário informar um JSON
 <br>
 <br>
 
-README criado por <a href="https://github.com/Tayna-Silva-Macedo" >Tayna Macedo</a>
+<p align="center" > README criado por <a href="https://github.com/Tayna-Silva-Macedo" >Tayna Macedo</a> </p> 🌻 
