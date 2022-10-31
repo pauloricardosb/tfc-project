@@ -65,7 +65,7 @@ cd app/backend && npm run test:coverage
 
 Se tudo funcionou perfeitamente, o retorno deve ser algo como:
 
-<img src="tests.png" alt="Cobertura de testes TFC">
+<div align="center"> <img src="tests.png" alt="Cobertura de testes TFC"> </div>
 
 ## Endpoints da API:
 
